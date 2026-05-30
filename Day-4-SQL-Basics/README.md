@@ -72,48 +72,6 @@ DAYNAME()
 LIKE
 ENUM
 
-# Sample Tables
-Users
-+---------+--------------+----------------------+-----------+-------------------+
-| user_id | full_name    | email                | city      | registration_date |
-+---------+--------------+----------------------+-----------+-------------------+
-|       1 | Keerthi      | keerthi@gmail.com    | Hyderabad | 2023-08-03        |
-|       2 | Kavya        | kavya123@gmail.com   | Nizamabad | 2024-07-03        |
-|       3 | Swathi       | swathi3@gmail.com    | Zahirabad | 2026-07-08        |
-|       4 | Swetha       | swe523@gmail.com     | Warangal  | 2025-02-24        |
-|       5 | Rani         | bkumarrani@gmail.com | Kurnool   | 2024-11-30        |
-|       6 | Aarav Sharma | aarav@gmail.com      | Hyderabad | 2026-05-25        |
-|       7 | Ananya Reddy | ananya@gmail.com     | Hyderabad | 2026-05-20        |
-|       8 | Arjun Verma  | arjun@gmail.com      | Chennai   | 2026-04-15        |
-|       9 | Bhavana Rao  | bhavana@gmail.com    | Bangalore | 2026-03-10        |
-|      10 | Akhil Kumar  | akhil@gmail.com      | Hyderabad | 2026-05-28        |
-|      11 | Sneha Patel  | sneha@gmail.com      | Mumbai    | 2026-01-18        |
-|      12 | Ajay Singh   | ajay@gmail.com       | Delhi     | 2026-05-24        |
-|      13 | Priya Nair   | priya@gmail.com      | Chennai   | 2026-02-08        |
-|      14 | Aditi Joshi  | aditi@gmail.com      | Hyderabad | 2026-05-26        |
-|      15 | Rahul Mehta  | rahul@gmail.com      | Hyderabad | 2026-05-27        |
-|      16 | Kiran Das    | kiran@gmail.com      | Hyderabad | 2026-05-21        |
-|      17 | Meera Iyer   | meera@gmail.com      | Bangalore | 2026-04-06        |
-|      18 | Arpita Sen   | arpita@gmail.com     | Kolkata   | 2026-05-17        |
-|      19 | Vikram Jain  | vikram@gmail.com     | Delhi     | 2026-03-22        |
-|      20 | Aman Gupta   | aman@gmail.com       | Hyderabad | 2026-05-29        |
-+---------+--------------+----------------------+-----------+-------------------+
-
-Events 
-+----------+-----------------+-----------------------------+-----------+---------------------+---------------------+-----------+--------------+
-| event_id | title           | description                 | city      | start_date          | end_date            | status    | organizer_id |
-+----------+-----------------+-----------------------------+-----------+---------------------+---------------------+-----------+--------------+
-|      101 | Tech Conference | AI and Cloud Event          | Hyderabad | 2026-06-10 09:00:00 | 2026-06-12 18:00:00 | upcoming  |            1 |
-|      102 | Music Fest      | Live Music Concert          | Chennai   | 2026-04-15 10:00:00 | 2026-04-15 22:00:00 | completed |            3 |
-|      103 | Startup Meetup  | Networking for founders     | Bangalore | 2026-05-20 09:00:00 | 2026-05-23 17:00:00 | completed |            4 |
-|      104 | Hackathon       | 24-hour coding challenge    | Hyderabad | 2026-07-01 08:00:00 | 2026-07-03 20:00:00 | upcoming  |            2 |
-|      105 | Food Carnival   | Food festival and stalls    | Mumbai    | 2026-03-05 11:00:00 | 2026-03-06 21:00:00 | cancelled |            6 |
-|      106 | Business Summit | Entrepreneurship conference | Hyderabad | 2026-02-01 09:00:00 | 2026-02-04 18:00:00 | completed |            5 |
-|      107 | Gaming Expo     | Esports and gaming event    | Delhi     | 2026-08-11 10:00:00 | 2026-08-13 19:00:00 | upcoming  |            7 |
-|      108 | Cultural Fest   | College cultural activities | Hyderabad | 2026-05-01 09:00:00 | 2026-05-02 20:00:00 | completed |            1 |
-+----------+-----------------+-----------------------------+-----------+---------------------+---------------------+-----------+--------------+
-
-
 # By completing this project, the following SQL concepts were practiced:
 
 Database and table creation
