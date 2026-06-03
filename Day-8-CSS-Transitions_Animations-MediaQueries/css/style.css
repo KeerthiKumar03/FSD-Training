@@ -1,0 +1,11 @@
+/* CSS transitions  */
+.box{
+  width:100px;
+  height:100px;
+  background-color: rgb(45, 138, 169);
+  transition: background-color 0.3s ease;
+
+}
+.box:hover{
+  background-color:burlywood;
+}
