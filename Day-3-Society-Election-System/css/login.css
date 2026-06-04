@@ -1,0 +1,240 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+.header{
+
+    background:#6a0707;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:15px;
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:gold;
+}
+
+/* LOGIN SECTION */
+
+.login-section{
+
+    width:500px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:30px;
+
+    animation:slideIn 1s ease;
+}
+
+.login-section h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#6a0707;
+}
+
+/* FORM */
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.login-form label{
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.login-form input:focus{
+
+    outline:none;
+
+    border-color:#6a0707;
+
+    box-shadow:0 0 5px rgba(106,7,7,0.4);
+}
+
+/* REMEMBER */
+
+.remember{
+
+    margin-top:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+}
+
+/* BUTTON */
+
+.btn{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    background:#6a0707;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    background:#8d1010;
+
+    transform:translateY(-3px);
+}
+
+/* LINKS */
+
+.links{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+}
+
+.links a{
+
+    text-decoration:none;
+
+    color:#6a0707;
+
+    transition:0.3s;
+}
+
+.links a:hover{
+
+    color:#d18a00;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+}
+
+/* ANIMATION */
+
+@keyframes slideIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+    }
+}
+
+/* MEDIA QUERY */
+
+@media(max-width:768px){
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .login-section{
+
+        width:90%;
+    }
+
+    .links{
+
+        flex-direction:column;
+
+        gap:10px;
+        text-align:center;
+    }
+}

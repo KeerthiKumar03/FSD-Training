@@ -3,75 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Survey</title>
 
-    <title>Survey</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/survey.css">
 </head>
 <body>
 
-<header>
+<header class="header">
 
-    <nav class="navbar">
+    <h1>Society Election System</h1>
 
-        <div class="logo">
-            <h1>Society Election System</h1>
-        </div>
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="survey.html">Survey</a></li>
+
+            <li><a href="polls.html">Polls</a></li>
+
+            <li><a href="results.html">Results</a></li>
+
+        </ul>
 
     </nav>
 
 </header>
 
-<section class="register-section">
+<section class="survey-section">
 
-    <div class="form-container">
+    <h2>Society Feedback Survey</h2>
 
-        <h2>Society Survey</h2>
+    <form class="survey-form">
 
-        <form>
+        <label>
+            How satisfied are you with cleanliness?
+        </label>
 
-            <label>Cleanliness Satisfaction</label>
+        <div class="radio-group">
 
-            <div class="radio-group">
+            <input type="radio" name="cleanliness">
+            <span>Excellent</span>
 
-                <input type="radio" name="clean">
-                <span>Excellent</span>
+            <input type="radio" name="cleanliness">
+            <span>Good</span>
 
-                <input type="radio" name="clean">
-                <span>Good</span>
+            <input type="radio" name="cleanliness">
+            <span>Average</span>
 
-                <input type="radio" name="clean">
-                <span>Poor</span>
+        </div>
 
-            </div>
+        <label>
+            Are there parking issues?
+        </label>
 
-            <label>Parking Issues</label>
+        <select>
 
-            <select>
+            <option>Select Option</option>
 
-                <option>Select Option</option>
-                <option>Yes</option>
-                <option>No</option>
+            <option>Yes</option>
 
-            </select>
+            <option>No</option>
 
-            <label>Security Feedback</label>
+        </select>
 
-            <textarea rows="5" placeholder="Enter feedback"></textarea>
+        <label>
+            Security Feedback
+        </label>
 
-            <button class="btn">
-                Submit Survey
-            </button>
+        <textarea
+            rows="5"
+            placeholder="Enter your feedback">
+        </textarea>
 
-        </form>
+        <button class="btn">
+            Submit Survey
+        </button>
 
-    </div>
+    </form>
 
 </section>
 
 <footer>
 
-    <p>© 2026 Society Election Management System</p>
+    <p>
+        © 2026 Society Election System
+    </p>
 
 </footer>
 

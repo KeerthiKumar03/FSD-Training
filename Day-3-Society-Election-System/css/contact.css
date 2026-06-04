@@ -1,0 +1,223 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+.header{
+
+    background:#6a0707;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:15px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:gold;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+
+    width:600px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    animation:fadeUp 1s ease;
+}
+
+.contact-section h2{
+
+    text-align:center;
+
+    color:#6a0707;
+
+    margin-bottom:25px;
+}
+
+/* FORM */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.contact-form label{
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#6a0707;
+
+    box-shadow:0 0 5px rgba(106,7,7,0.3);
+}
+
+/* BUTTON */
+
+.btn{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    background:#6a0707;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+
+    background:#8f1111;
+
+    transform:translateY(-3px);
+}
+
+/* OFFICE DETAILS */
+
+.office-details{
+
+    width:600px;
+
+    margin:20px auto 50px;
+
+    background:white;
+
+    padding:25px;
+}
+
+.office-details h2{
+
+    color:#6a0707;
+
+    margin-bottom:15px;
+}
+
+.office-details p{
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* MEDIA QUERY */
+
+@media(max-width:768px){
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .contact-section,
+    .office-details{
+
+        width:90%;
+    }
+}

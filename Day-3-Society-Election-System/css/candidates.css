@@ -1,0 +1,197 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+.header{
+
+    background:#6a0707;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:15px;
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:gold;
+}
+
+/* CANDIDATES SECTION */
+
+.candidates-section{
+
+    width:85%;
+
+    margin:50px auto;
+
+    animation:slideIn 1s ease;
+}
+
+.candidates-section h2{
+
+    text-align:center;
+
+    color:#6a0707;
+
+    margin-bottom:40px;
+}
+
+/* PROFILE */
+
+.candidate-profile{
+
+    background:white;
+
+    display:flex;
+
+    gap:25px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    transition:0.4s;
+}
+
+.candidate-profile:hover{
+
+    transform:translateX(10px);
+
+    background:#fff8f0;
+}
+
+/* IMAGE */
+
+.candidate-profile img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    transition:0.4s;
+}
+
+.candidate-profile img:hover{
+
+    transform:scale(1.05);
+}
+
+/* DETAILS */
+
+.details h3{
+
+    color:#6a0707;
+
+    margin-bottom:15px;
+}
+
+.details p{
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* ANIMATION */
+
+@keyframes slideIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .candidate-profile{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .candidate-profile img{
+
+        width:180px;
+
+        height:180px;
+
+        margin:auto;
+    }
+
+    .candidates-section{
+
+        width:95%;
+    }
+}

@@ -3,67 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vote Page</title>
+    <title>Vote - Society Election System</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vote.css">
 </head>
 <body>
 
-<header>
+<header class="header">
 
-    <nav class="navbar">
+    <h1>Society Election System</h1>
 
-        <div class="logo">
-            <h1>Society Election System</h1>
-        </div>
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="polls.html">Polls</a></li>
+
+            <li><a href="vote.html">Vote</a></li>
+
+            <li><a href="results.html">Results</a></li>
+
+        </ul>
 
     </nav>
 
 </header>
 
-<section class="features">
+<section class="vote-section">
 
     <h2>Vote For Your Representative</h2>
 
-    <div class="feature-container">
+    <div class="candidate">
 
-        <div class="card">
+        <img src="images/candidate1.jfif" alt="Candidate 1">
 
-            <img src="images/candidate1.jfif" alt="Candidate" width="100%">
+        <h3>K. T. Rama Rao</h3>
 
-            <h3>K.T.RamaRao</h3>
+        <p>
+            Position: Chief Minister
+        </p>
 
-            
+        <input type="radio" name="vote">
 
-            <p>Position: Chief Minister</p>
-
-            <p>
-                KTR is a prominent Telangana politician and Working President of the BRS party.
-            </p>
-
-            <input type="radio" name="vote">
-
-        </div>
-
-        <div class="card">
-
-            <img src="images/candidate2.jfif" alt="Candidate" width="100%">
-
-            <h3>Revanth Reddy</h3>
-
-            <p>Position: Chief Minister</p>
-
-            <p>
-                Revanth Reddy changes parties faster than Hyderabad traffic moves.
-            </p>
-
-            <input type="radio" name="vote">
-
-        </div>
+        <label>Select Candidate</label>
 
     </div>
 
-    <br>
+    <div class="candidate">
+
+        <img src="images/candidate2.jfif" alt="Candidate 2">
+
+        <h3>Revanth Reddy</h3>
+
+        <p>
+            Position: Chief Minister
+        </p>
+
+        <input type="radio" name="vote">
+
+        <label>Select Candidate</label>
+
+    </div>
 
     <button class="btn">
         Submit Vote
@@ -73,7 +75,9 @@
 
 <footer>
 
-    <p>© 2026 Society Election Management System</p>
+    <p>
+        © 2026 Society Election System
+    </p>
 
 </footer>
 

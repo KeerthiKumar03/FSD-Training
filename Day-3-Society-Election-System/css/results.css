@@ -1,0 +1,235 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+.header{
+
+    background:#6a0707;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:15px;
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+
+    color:gold;
+}
+
+/* RESULTS SECTION */
+
+.results-section{
+
+    width:80%;
+
+    margin:50px auto;
+
+    animation:fadeIn 1s ease;
+}
+
+.results-section h2{
+
+    text-align:center;
+
+    color:#6a0707;
+
+    margin-bottom:30px;
+}
+
+/* WINNER BOX */
+
+.winner-box{
+
+    background:#e8ffe8;
+
+    border:2px solid green;
+
+    padding:20px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.winner-box h3{
+
+    color:green;
+
+    margin-bottom:10px;
+}
+
+.winner-box p{
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+/* TABLE */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+}
+
+th{
+
+    background:#6a0707;
+
+    color:white;
+
+    padding:12px;
+}
+
+td{
+
+    text-align:center;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+}
+
+tr:hover{
+
+    background:#fff8f0;
+}
+
+/* PROGRESS BAR */
+
+.vote-title{
+
+    margin-top:40px;
+
+    margin-bottom:15px;
+
+    color:#6a0707;
+}
+
+.progress{
+
+    width:100%;
+
+    height:35px;
+
+    background:#ddd;
+}
+
+.progress-bar{
+
+    height:100%;
+
+    width:70%;
+
+    background:green;
+
+    color:white;
+
+    text-align:center;
+
+    line-height:35px;
+
+    animation:grow 2s ease;
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+}
+
+/* ANIMATIONS */
+
+@keyframes grow{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width:70%;
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .nav-links{
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .results-section{
+
+        width:95%;
+    }
+
+    table{
+
+        font-size:14px;
+    }
+}
