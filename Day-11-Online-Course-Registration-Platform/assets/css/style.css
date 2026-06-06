@@ -1,0 +1,12 @@
+.hero{
+  height:80vh;
+  background-image:url("assets/images/banner.jfif") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-img-top{
+  width:415px;
+  height:300px;
+  object-fit:cover;
+}
