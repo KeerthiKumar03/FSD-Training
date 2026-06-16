@@ -1,18 +1,32 @@
 const http = require('node:http')
+const fs = require('fs');
 const express = require('express');
-const { default: bodyParser } = require('body-parser');
 const app = express()
-const body = require("body-parser")
-app.use(bodyParser.json())
+app.use(express.json())
+//get all users
 app.get("/",(req,res)=>{
-  return res.send("helloo..Welcome");
+  fs.readFile("/users.json",'utf-8',(err,data)=>{
+    if(err){
+      return res.status(500).json({message:"Error reading users file"});
+    }
+    const users = JSON.parse(data);
+  })
 });
-app.post("/",(req,res)=>{
-  return res.send("Post from the client");
-});
+//get users by id
+app.get("/users",(req,res)=>{
+ fs
+})
 
-app.get("/about",(req,res)=>{
-  res.send("Hayee Hayee");
+
+
+
+app.post("/users",(req,res)=>{
+  const {name} = req.body;
+  const {course} = req.body;
+  const {age} = req.body;
+  const newItem = {id:users.length+1,name,course,age};
+  users.push(newItem);
+  res.status(201).json(newItem);
 });
 
 
