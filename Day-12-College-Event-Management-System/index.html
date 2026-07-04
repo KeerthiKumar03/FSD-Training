@@ -4,34 +4,49 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>College Event Management</title>
+    <title>College Event Management System</title>
 
     <!-- Bootstrap CSS -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
+<!-- ================= SCROLL PROGRESS BAR ================= -->
+
+<div id="progress-bar"></div>
+
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top custom-navbar">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="#">
+<a class="navbar-brand fw-bold fs-3" href="index.html">
+
 🎓 College Events
+
 </a>
 
 <button class="navbar-toggler"
@@ -45,34 +60,94 @@ data-bs-target="#navbar">
 <div class="collapse navbar-collapse"
 id="navbar">
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto align-items-lg-center">
 
 <li class="nav-item">
-<a class="nav-link active" href="index.html">Home</a>
+
+<a class="nav-link active"
+href="index.html">
+
+Home
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="events.html">Events</a>
+
+<a class="nav-link"
+href="events.html">
+
+Events
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="schedule.html">Schedule</a>
+
+<a class="nav-link"
+href="schedule.html">
+
+Schedule
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="gallery.html">Gallery</a>
+
+<a class="nav-link"
+href="gallery.html">
+
+Gallery
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="registration.html">Registration</a>
+
+<a class="nav-link"
+href="registration.html">
+
+Registration
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="faq.html">FAQ</a>
+
+<a class="nav-link"
+href="faq.html">
+
+FAQ
+
+</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
+
+<a class="nav-link"
+href="contact.html">
+
+Contact
+
+</a>
+
+</li>
+
+<li class="nav-item ms-lg-3">
+
+<button id="themeBtn"
+class="btn btn-outline-light rounded-pill">
+
+<i class="bi bi-moon-stars-fill"></i>
+
+</button>
+
 </li>
 
 </ul>
@@ -86,7 +161,7 @@ id="navbar">
 <!-- ================= CAROUSEL ================= -->
 
 <div id="carouselExample"
-class="carousel slide"
+class="carousel slide carousel-fade"
 data-bs-ride="carousel">
 
 <div class="carousel-inner">
@@ -98,12 +173,20 @@ class="d-block w-100 carousel-img">
 
 <div class="carousel-caption">
 
-<h1>College Event Management System</h1>
+<h1 data-aos="zoom-in">
 
-<p>Discover. Participate. Celebrate.</p>
+College Event Management System
+
+</h1>
+
+<p data-aos="fade-up">
+
+Discover • Participate • Celebrate
+
+</p>
 
 <a href="registration.html"
-class="btn btn-warning btn-lg">
+class="btn btn-warning btn-lg rounded-pill">
 
 Register Now
 
@@ -120,9 +203,17 @@ class="d-block w-100 carousel-img">
 
 <div class="carousel-caption">
 
-<h1>Technical Events</h1>
+<h1>
 
-<p>Hackathons • Coding • Quiz</p>
+National Level Hackathon
+
+</h1>
+
+<p>
+
+Code • Innovate • Win
+
+</p>
 
 </div>
 
@@ -135,9 +226,17 @@ class="d-block w-100 carousel-img">
 
 <div class="carousel-caption">
 
-<h1>Cultural Events</h1>
+<h1>
 
-<p>Dance • Music • Fun</p>
+Cultural Fest 2026
+
+</h1>
+
+<p>
+
+Dance • Music • Fun
+
+</p>
 
 </div>
 
@@ -167,38 +266,313 @@ data-bs-slide="next">
 
 <!-- ================= HERO ================= -->
 
-<section class="container py-5">
+<section class="hero py-5">
+
+<div class="container">
 
 <div class="row align-items-center">
 
-<div class="col-lg-6">
+<div class="col-lg-6"
+data-aos="fade-right">
 
-<h1 class="display-4 fw-bold">
+<h1 class="display-3 fw-bold">
 
-Join Our Annual College Fest
+Experience Campus Events Like Never Before
 
 </h1>
 
-<p class="lead">
+<p class="lead my-4">
 
-Experience technical competitions, cultural celebrations,
-innovation, networking and unforgettable memories.
+Explore technical competitions, hackathons, cultural programs,
+project expos, coding contests and much more.
+
+Join thousands of students in one exciting celebration of
+innovation and creativity.
 
 </p>
 
 <a href="registration.html"
-class="btn btn-primary btn-lg">
+class="btn btn-primary btn-lg rounded-pill me-3">
 
-Register Today
+Register
+
+</a>
+
+<a href="events.html"
+class="btn btn-outline-light btn-lg rounded-pill">
+
+Explore Events
 
 </a>
 
 </div>
 
-<div class="col-lg-6 text-center">
+<div class="col-lg-6 text-center"
+data-aos="zoom-in">
 
 <img src="images/img.jfif"
-class="img-fluid rounded shadow">
+class="img-fluid hero-image">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="container py-5">
+
+<div class="row text-center g-4">
+
+<div class="col-md-3">
+
+<div class="card stats-card">
+
+<h1 class="counter"
+data-target="1500">
+
+0
+
+</h1>
+
+<p>
+
+Students Registered
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card stats-card">
+
+<h1 class="counter"
+data-target="25">
+
+0
+
+</h1>
+
+<p>
+
+Events
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card stats-card">
+
+<h1 class="counter"
+data-target="18">
+
+0
+
+</h1>
+
+<p>
+
+Sponsors
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card stats-card">
+
+<h1 class="counter"
+data-target="40">
+
+0
+
+</h1>
+
+<p>
+
+Industry Speakers
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURED EVENT ================= -->
+
+<section class="container pb-5">
+
+<div class="card featured-card text-center p-5"
+data-aos="zoom-in">
+
+<h5 class="text-warning">
+
+⭐ FEATURED EVENT
+
+</h5>
+
+<h1 class="fw-bold my-3">
+
+National Level Hackathon 2026
+
+</h1>
+
+<p class="lead">
+
+Showcase your creativity, solve real-world problems,
+collaborate with talented developers,
+and compete for exciting prizes.
+
+</p>
+
+<a href="registration.html"
+class="btn btn-warning btn-lg rounded-pill">
+
+Register Now
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= COUNTDOWN TIMER ================= -->
+
+<section class="container text-center py-5">
+
+<h2 class="fw-bold">
+
+⏳ Countdown to College Fest
+
+</h2>
+
+<h1 id="countdown"
+class="display-4 text-primary mt-4">
+
+Loading...
+
+</h1>
+
+</section>
+
+<!-- ======= CONTINUES IN PART 2 ======= -->
+ <!-- ================= WHY CHOOSE US ================= -->
+
+<section class="container py-5">
+
+<div class="text-center mb-5" data-aos="fade-up">
+
+<h2 class="fw-bold">
+
+Why Participate?
+
+</h2>
+
+<p class="lead">
+
+Develop skills, network with peers, and showcase your talent.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4" data-aos="flip-left">
+
+<div class="card h-100 shadow feature-card">
+
+<div class="card-body text-center">
+
+<i class="bi bi-lightbulb display-3 text-warning"></i>
+
+<h4 class="mt-3">
+
+Learn & Innovate
+
+</h4>
+
+<p>
+
+Participate in technical workshops, coding contests,
+hackathons and project exhibitions to improve your skills.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4" data-aos="zoom-in">
+
+<div class="card h-100 shadow feature-card">
+
+<div class="card-body text-center">
+
+<i class="bi bi-people-fill display-3 text-primary"></i>
+
+<h4 class="mt-3">
+
+Build Your Network
+
+</h4>
+
+<p>
+
+Meet industry experts, alumni,
+faculty members and students from different branches.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4" data-aos="flip-right">
+
+<div class="card h-100 shadow feature-card">
+
+<div class="card-body text-center">
+
+<i class="bi bi-trophy-fill display-3 text-success"></i>
+
+<h4 class="mt-3">
+
+Win Exciting Prizes
+
+</h4>
+
+<p>
+
+Compete in exciting events and earn certificates,
+recognition and attractive rewards.
+
+</p>
+
+</div>
+
+</div>
 
 </div>
 
@@ -208,21 +582,31 @@ class="img-fluid rounded shadow">
 
 <!-- ================= EVENT HIGHLIGHTS ================= -->
 
-<section class="bg-light py-5">
+<section class="py-5 bg-light">
 
 <div class="container">
 
-<h2 class="text-center mb-5">
+<div class="text-center mb-5" data-aos="fade-up">
+
+<h2 class="fw-bold">
 
 Upcoming Highlights
 
 </h2>
 
+<p class="lead">
+
+Don't miss these exciting events!
+
+</p>
+
+</div>
+
 <div class="row g-4">
 
-<div class="col-md-4">
+<div class="col-md-4" data-aos="fade-up">
 
-<div class="card shadow">
+<div class="card shadow h-100 feature-card">
 
 <div class="card-body text-center">
 
@@ -236,7 +620,7 @@ Hackathon
 
 <p>
 
-24-hour coding challenge for innovators.
+24-hour coding challenge with exciting prizes.
 
 </p>
 
@@ -246,9 +630,9 @@ Hackathon
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 
-<div class="card shadow">
+<div class="card shadow h-100 feature-card">
 
 <div class="card-body text-center">
 
@@ -262,7 +646,7 @@ Project Expo
 
 <p>
 
-Showcase innovative ideas and prototypes.
+Showcase innovative ideas and working prototypes.
 
 </p>
 
@@ -272,9 +656,9 @@ Showcase innovative ideas and prototypes.
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
 
-<div class="card shadow">
+<div class="card shadow h-100 feature-card">
 
 <div class="card-body text-center">
 
@@ -288,7 +672,7 @@ Cultural Fest
 
 <p>
 
-Dance, music and entertainment.
+Dance, music, fashion shows and entertainment.
 
 </p>
 
@@ -304,28 +688,28 @@ Dance, music and entertainment.
 
 </section>
 
-<!-- ================= CTA ================= -->
+<!-- ================= CALL TO ACTION ================= -->
 
-<section class="py-5 text-center">
+<section class="cta-section py-5">
 
-<div class="container">
+<div class="container text-center" data-aos="zoom-in">
 
-<h2>
+<h2 class="fw-bold">
 
-Ready to Participate?
+Ready to Make Memories?
 
 </h2>
 
-<p>
+<p class="lead my-4">
 
-Register now and secure your place in exciting events.
+Join the biggest college event of the year and showcase your talent.
 
 </p>
 
 <a href="registration.html"
-class="btn btn-success btn-lg">
+class="btn btn-warning btn-lg rounded-pill px-5">
 
-Register Now
+Register Today
 
 </a>
 
@@ -333,25 +717,141 @@ Register Now
 
 </section>
 
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="topBtn"
+class="btn btn-primary rounded-circle">
+
+<i class="bi bi-arrow-up"></i>
+
+</button>
+
 <!-- ================= FOOTER ================= -->
 
-<footer class="bg-dark text-white text-center p-4">
+<footer class="footer text-white pt-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4 mb-4">
+
+<h3>
+
+🎓 College Events
+
+</h3>
 
 <p>
 
-© 2026 College Event Management System
+A platform that encourages students to learn,
+innovate, collaborate and celebrate through technical
+and cultural events.
+
+</p>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<h4>
+
+Quick Links
+
+</h4>
+
+<ul class="list-unstyled">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="events.html">Events</a></li>
+
+<li><a href="registration.html">Registration</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<h4>
+
+Follow Us
+
+</h4>
+
+<div class="fs-3">
+
+<i class="bi bi-facebook me-3"></i>
+
+<i class="bi bi-instagram me-3"></i>
+
+<i class="bi bi-twitter-x me-3"></i>
+
+<i class="bi bi-linkedin"></i>
+
+</div>
+
+<p class="mt-3">
+
+Email: events@college.edu
 
 </p>
 
 <p>
 
-Designed using HTML • CSS • Bootstrap
+Phone: +91 9876543210
 
 </p>
+
+</div>
+
+</div>
+
+<hr class="border-light">
+
+<div class="text-center pb-3">
+
+<p class="mb-0">
+
+© 2026 College Event Management System |
+Designed using HTML, CSS, Bootstrap & JavaScript
+
+</p>
+
+</div>
+
+</div>
 
 </footer>
 
+<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true,
+
+offset:100
+
+});
+
+</script>
+
+<!-- Custom JavaScript -->
 
 <script src="js/script.js"></script>
 
